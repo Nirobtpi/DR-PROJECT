@@ -1,0 +1,39 @@
+@import url('https://fonts.googleapis.com/css2?family=Cairo:wght@500;600;700&family=Montserrat:wght@300;400;500;600;700&display=swap');
+body{
+    font-family: 'Montserrat', sans-serif;
+}
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+li{
+    list-style: none;
+}
+a{
+    text-decoration: none;
+}
+.container{
+    width: 90%;
+    margin: auto;
+    // background: red;
+}
+
+// color-plate
+
+$btnColor:#fd556d;
+$activeColor:#57ccc3;
+$fontColor:#404040;
+$colorP:#828282;
+
+@import'header';
+@import'hero';
+@import'appointment';
+@import'choose';
+@import'today';
+@import'service';
+@import 'discount';
+@import'newsletter';
+@import'footer';
+@import'responsive';
+ 

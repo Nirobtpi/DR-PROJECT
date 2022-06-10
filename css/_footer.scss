@@ -1,0 +1,88 @@
+#footer{
+    width: 100%;
+    position: relative;
+    background: #26292D;
+    height: auto;
+
+    .row{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        flex-direction: row;
+        flex-grow: 1;
+        flex-wrap: wrap;
+        padding-top: 40px;
+        padding-bottom: 40px;
+
+        .col-4{
+            flex-basis: 23%;
+
+            .logo{
+                width: 100%;
+                // background: red;
+                a{
+                    font-size: 18px;
+                    
+                    h2{
+                        color: #fff;
+                        font-weight: 700;
+                        span{
+                            color: $activeColor;
+                        }
+                        
+                    }
+                    p{
+                        color: $fontColor;
+                        font-size: 14px;
+                        font-weight: 400;
+
+                    }
+                }
+            }
+            .content{
+                p{
+                    margin-top: 20px;
+                    color: $fontColor;
+                    line-height: 2;
+                    font-size: 15px;
+                    font-weight: 500;
+                }
+            }
+
+            .contact{
+                h2{
+                    font-size: 16px;
+                    color: #fff;
+                    margin-bottom: 25px;
+                   margin-top: 20px;
+                }
+            }
+            .contact-info{
+                // margin-top: 20px;
+                h3{
+                    color: $fontColor;
+                    margin-top: 18px;
+                    font-weight: 400;
+                    font-size: 14px;
+                }
+
+                span{
+                    color: $activeColor;
+                    font-size: 14px;
+                }
+            }
+        }
+    }
+    .copywright{
+        padding: 50px 0;
+        h5{
+            color: #fff;
+            font-weight: 500;
+            font-size: 14px;letter-spacing: 2px;
+
+            span{
+                color: $activeColor;
+            }
+        }
+    }
+}

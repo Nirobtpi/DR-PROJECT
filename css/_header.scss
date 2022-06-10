@@ -1,0 +1,148 @@
+#header{
+    position: relative;
+    width: 100%;
+    background: #fff  ;
+    height: 18vh;
+    padding: 30px 0;
+    position: sticky;
+    top: 0;
+    z-index: 1;
+
+
+    .menu{
+        float: right;
+        font-size: 30px;
+        cursor: pointer;
+        color: $fontColor;
+        display: none;
+    }
+    .row{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        flex-grow: 1;
+        flex-direction: row;
+        flex-wrap: wrap;
+
+        .col-7{
+            flex-basis: 70%;
+            .logo{
+                // padding: 40px 0;
+                position: absolute;
+                // margin-top: 20px;
+                
+               a{
+                   color: $fontColor;
+                   font-size: 30px;
+                   line-height: .79px;
+                   font-weight: 700;
+                   span{
+                       color: $activeColor;
+                       
+                   }
+               }
+
+               .serjare{
+                margin-top: -2.5px;
+                   a{
+                       font-size: 12px;
+                       font-weight: 300;
+                       
+                   }
+               }
+            }
+            nav{
+                // margin-top: -10px;
+                margin-left: -80px;
+                
+                ul{
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    li{
+                        margin-right: 30px;
+                        a{
+                            text-transform: capitalize;
+                            font-size: 18px;
+                            font-weight: 500;
+                            color: $fontColor;
+                            transition: 0.5s all ease;
+                            &:hover{
+                                color: $activeColor;
+                            }
+                        }
+                        
+                    }
+                    .active a{
+                        color: $activeColor;
+                        
+                    } 
+                }
+            }
+        }
+
+        .col-3{
+            flex-basis: 28%;
+            float: left;
+            .btn{
+                margin-left: -14%;
+                // margin-top: 30px;
+                position: absolute;
+                padding: 12px 40px;
+                border-radius: 50px;
+                font-size: 14px;
+                text-transform: uppercase;
+                letter-spacing: 2px;
+                background: $btnColor;
+                border: 2px solid $btnColor;
+                cursor: pointer;
+                transition: 0.3s all ease;
+                outline: none;
+                
+                &:hover{
+                    border: 2px solid $btnColor;
+                    background: none;
+                    position: absolute;
+                }
+            }
+            .sc-icon{
+                // margin-top: 20px;
+                float: right;
+                
+                ul{
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    li{
+                        margin-left: 40px;
+                        a{
+                            height: 40px;
+                            width: 40px;
+                            background: #e6ebf1;
+                            display: block;
+                            position: relative;
+                            border-radius: 50%;
+                            i{
+                            display: flex;
+                            justify-content: center;
+                            text-align: center;
+                            margin-top: 12px;
+                            position: absolute;
+                            margin-left: 13px;
+                            color: #404040;
+                            // top: 0;
+                            // left: 0;
+                            // transform: translate(50%,50%);
+                            font-size: 18px;
+                            
+                            }
+                            &:hover{
+                                background: $activeColor;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

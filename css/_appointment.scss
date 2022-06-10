@@ -1,0 +1,143 @@
+#appointment{
+    width: 100%;
+    position: relative;
+    padding-bottom: 60px;
+
+    .row{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        flex-wrap: wrap;
+        flex-direction: row;
+        flex-grow: 1;
+        margin-top: 70px;
+        .col-2{
+            flex-basis: 48%;
+            // background: red;
+
+            .content{
+                margin-top: -14%;
+                
+                h5{
+                    font-size: 18px;
+                    color: $fontColor;
+                    font-weight: 400;
+                    letter-spacing: 1px;
+                    margin-bottom: 20px;
+                }
+                h2{
+                    font-size: 2.5em;
+                    letter-spacing: 2px;
+                    color: $fontColor;
+                    font-weight: 500;
+                    margin-bottom: 20px;
+                }
+                p{
+                    // letter-spacing: 1px;
+                    font-size: 14px;
+                    line-height: 2;
+                    font-weight: 500;
+                    color: $fontColor;
+                    margin-bottom: 50px;
+                    opacity: 0.5;
+                }
+            }
+            .row-2{
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
+                flex-direction: row;
+                flex-wrap: wrap;
+                .col-3{
+                    flex-basis: 30%;
+                    h2{
+                        font-size: 36px;
+                        line-height: 0.75;
+                        font-weight: 700;
+                        color: $activeColor;
+                        margin-bottom: 5px;
+                    }
+                    h4{
+                        font-size: 18px;
+                        font-weight: 600;
+                        color: $fontColor;
+                        line-height: 1.5;
+
+                    }
+                }
+            }
+          
+            form{
+                
+                    width: 100%;
+                    background: #fff;
+                    // padding-left: 33px;
+                    // padding-right: 34px;
+                    padding-bottom: 40px;
+                    box-shadow: 0 25px 38px rgba(0,0,0,.2);
+                
+                .content-form{
+                    width: 350px;
+                    height: 60px;
+                    background: $activeColor;
+                    position: relative;                 
+                    h2{
+                        margin-left: 30px;
+                        justify-content: center;
+                        margin-top: 15px;
+                        position: absolute;
+                        color: #fff;
+                        font-weight: 500;
+                    }
+                  
+                }
+              input{
+                      padding: 20px 40px;
+                      margin-top: 45px;
+                      margin-right: 10px;
+                      background: transparent;
+                      margin-left: 20px;
+                      border: 2px solid #ddd;
+                      outline: none;
+                      &:hover{
+                          border: 2px solid $activeColor;
+                        }
+                        &[type=text] {
+                            text-transform: capitalize;
+                          }
+                        &[type=email] {
+                            text-transform: capitalize;
+                        }
+                        &[type=number] {
+                            text-transform: capitalize;
+                        }
+                        &[type=date] {
+                            text-transform: capitalize;
+                            
+                        }
+                     }
+
+                     .btn-2{
+                                margin-top: 50px;
+                                margin-left: 30px;
+                                padding: 12px 150px;
+                                border-radius: 50px;
+                                font-size: 14px;
+                                text-transform: uppercase;
+                                letter-spacing: 2px;
+                                background: $btnColor;
+                                border: 2px solid $btnColor;
+                                cursor: pointer;
+                                transition: 0.3s all ease;
+                                outline: none;
+                                &:hover{
+                                    border: 2px solid $btnColor;
+                                    background: none;
+                                    
+                                }
+                            }
+            }
+        }
+       
+    }
+}

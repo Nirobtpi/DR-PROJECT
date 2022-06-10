@@ -1,0 +1,71 @@
+#hero{
+    position: relative;
+    width: 100%;
+    background: url(../img/xhome_slider.jpg.pagespeed.ic.fYTEU3uvVu.webp) no-repeat;
+    background-position: center;
+    background-size: cover;
+    object-fit: cover;
+    height: 100vh;
+
+    .content{
+        position: absolute;
+        width: 550px;
+        margin-top: 12%;
+        margin-left: 50px;
+        // background: red;
+        h4{
+            font-size: 25px;
+            color: $activeColor;
+            font-weight: 700;
+            letter-spacing: 2px;
+            margin-bottom: 10px;
+        }
+        h2{
+            font-size: 50px;
+            font-weight: 500;
+            color: $fontColor;
+            letter-spacing: 2px;
+            margin-bottom: 10px;
+        }
+        p{
+            font-size: 14px;
+            line-height: 2;
+            color: $colorP;
+            font-weight: 500px;
+            margin-bottom: 50px;
+            
+        }
+        .btn-1{
+            padding: 15px 40px;
+            background: $btnColor;
+            border: 2px solid $btnColor;
+            border-radius: 40px;
+            cursor: pointer;
+            font-weight: 500;
+            font-size: 18px;
+            color: #fff;
+            transition: 0.5s all ease;
+            margin-right: 10px;
+            &:hover{
+                background: none;
+                color: $btnColor;
+            }
+        }
+        .btn-2{
+            padding: 15px 40px;
+            background: $activeColor ;
+            border: 2px solid $activeColor;
+            border-radius: 40px;
+            cursor: pointer;
+            font-weight: 500;
+            font-size: 18px;
+            color: #fff;
+            transition: 0.5s all ease;
+            text-transform: uppercase;
+            &:hover{
+                background: none;
+                color: $btnColor;
+            }
+        }
+    }
+}

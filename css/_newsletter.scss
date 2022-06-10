@@ -1,0 +1,52 @@
+#newsletter{
+    position: relative;
+    width: 100%;
+    background: url(../img/newsletter.jpg.webp) no-repeat;
+    background-size: cover;
+    background-position: center;
+    height: 50vh;
+
+    .content{
+        position: absolute;
+        margin-top: 5%;
+        margin-left: 22%;
+        h4{
+            text-align: center;
+            font-weight: 300;
+            color: #fff;
+            font-size: 3vw;
+        }
+
+        input{
+            width: 600px;
+            margin-left: -3%;
+            margin-top: 40px;
+            padding: 15px 20px;
+            outline: none;
+            background: transparent;
+            border: 2px solid #fff;
+            border-right: none;
+            
+            &::placeholder{
+                color: #fff;
+            }
+            &[type=email]{
+                font-style: italic;
+                color: #fff;
+                font-size: 18px;
+            }
+        }
+        button{
+            padding: 18px 20px;
+            width: 200px;
+            margin-left: -30px;
+            border-radius: 40px;
+            border: none;
+            background: $btnColor;
+            cursor: pointer;
+            color: #fff;
+            text-transform: uppercase;
+            font-size: 18px;
+        }
+    }
+}

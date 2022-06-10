@@ -1,0 +1,76 @@
+#discount{
+    width: 100%;
+    position: relative;
+    background: url(../img/extra.jpg.webp) no-repeat;
+    background-size: cover;
+    background-position: center;
+    height: 100vh;
+
+    
+        .extra_content {
+            position: absolute;
+            margin-left: 60%;
+            margin-top: 30px;
+            background: #fff;
+            width: 393px;
+            padding-top: 74px;
+            padding-left: 46px;
+            padding-right: 30px;
+            padding-bottom: 63px;
+            box-shadow: 0 25px 38px rgba(0,0,0,.2);
+
+            div:first-child {
+                font-size: 60px;
+                font-weight: 700;
+                color: #6bdbd2;
+                line-height: .75;
+                position: relative;
+                span{
+                    font-size: 36px;
+                    position: absolute;
+                }
+                
+            }
+            h4 {
+                font-size: 24px;
+                font-weight: 500;
+                line-height: .75;
+                margin-left: 100px;
+                color: $fontColor;
+                margin-top: -10px;
+            }
+
+            h2{
+                font-size: 70px;
+                margin-top: 20px;
+                color: $fontColor;
+                font-weight: 600;
+            }
+            p{
+                font-size: 14px;
+                margin-top: 20px;
+                line-height: 2;
+            }
+            
+            .btn{
+                margin-top: 30px;
+                padding:15px 40px;
+                border: 2px solid $btnColor;
+                background: $btnColor;
+                border-radius: 50px;
+                font-size: 16px;
+                color: #fff;
+                font-weight: 400;
+                letter-spacing: 1px;
+                cursor: pointer;
+                transition: 0.5s all ease;
+
+                &:hover{
+                    background: #fff;
+                    color: $btnColor;
+                }
+            }
+        }
+
+    
+}
